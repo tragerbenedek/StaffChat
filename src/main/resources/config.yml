@@ -1,0 +1,22 @@
+# StaffChat Configuration
+
+# Prefix shown before staff chat messages
+staff-chat-prefix: "&8[&bStaffChat&8]"
+
+# Prefix shown before staff direct messages
+staff-msg-prefix: "&8[&dStaffMsg&8]"
+
+# Color codes for each role label (using legacy & codes)
+role-colors:
+  OWNER: "&4"
+  ADMIN: "&c"
+  DEV: "&b"
+  MOD: "&2"
+  HELPER: "&e"
+  STAFF: "&7"
+
+# Whether players in staff chat mode should hide normal public chat
+hide-normal-chat: true
+
+# Whether staff chat messages should be logged to the console
+log-to-console: true
