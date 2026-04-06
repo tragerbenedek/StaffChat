@@ -15,7 +15,7 @@ import java.util.Map;
 public class ConfigManager {
 
     /** Serialiser that converts {@code &} colour codes to Adventure components. */
-    private static final LegacyComponentSerializer LEGACY =
+    private static final LegacyComponentSerializer LEGACY_SERIALIZER =
             LegacyComponentSerializer.legacyAmpersand();
 
     private final StaffChatPlugin plugin;
@@ -91,6 +91,6 @@ public class ConfigManager {
      * @return the corresponding Adventure component
      */
     public Component colorize(String text) {
-        return LEGACY.deserialize(text);
+        return LEGACY_SERIALIZER.deserialize(text);
     }
 }

@@ -88,7 +88,7 @@ public class StaffMsgCommand implements CommandExecutor {
         String formatted = prefix
                 + " " + senderRoleColor + "[" + senderRole + "] "
                 + "&f" + player.getName()
-                + " &7\u2192 "
+                + " &7→ "
                 + targetRoleColor + "[" + targetRole + "] "
                 + "&f" + target.getName()
                 + "&7: &f" + rawMessage;

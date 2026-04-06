@@ -62,7 +62,7 @@ public class ChatListener implements Listener {
             String formatted = prefix
                     + " " + roleColor + "[" + role + "] "
                     + "&f" + sender.getName()
-                    + " &7\u00bb &f" + plainMessage;
+                    + " &7» &f" + plainMessage;
 
             Component component = configManager.colorize(formatted);
 
