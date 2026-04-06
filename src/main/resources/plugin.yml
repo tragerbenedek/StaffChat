@@ -1,0 +1,49 @@
+name: StaffChat
+version: 1.0.0
+main: com.staffchat.StaffChatPlugin
+api-version: '1.20'
+description: A staff-only chat plugin with toggle mode, direct messaging, and staff list.
+author: tragerbenedek
+
+commands:
+  staffchat:
+    description: Toggle staff chat mode
+    usage: /staffchat
+    aliases: [sc]
+    permission: staffchat.use
+  staffmsg:
+    description: Send a private message to a staff member
+    usage: /staffmsg <player> <message>
+    aliases: [sm]
+    permission: staffchat.msg
+  stafflist:
+    description: List all online staff members
+    usage: /stafflist
+    aliases: [sl]
+    permission: staffchat.use
+
+permissions:
+  staffchat.use:
+    description: Allows using /staffchat and /stafflist
+    default: op
+  staffchat.msg:
+    description: Allows using /staffmsg
+    default: op
+  staffchat.staff:
+    description: Staff role
+    default: false
+  staffchat.helper:
+    description: Helper role
+    default: false
+  staffchat.mod:
+    description: Moderator role
+    default: false
+  staffchat.admin:
+    description: Admin role
+    default: false
+  staffchat.dev:
+    description: Developer role
+    default: false
+  staffchat.owner:
+    description: Owner role
+    default: false
